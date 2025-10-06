@@ -24,8 +24,8 @@ Foi utilizada a arquitetura **ResNet18**, uma rede neural de 18 camadas conhecid
 ### 2.1. Evolução do Treinamento
 Durante o treinamento, o modelo ResNet18 demonstrou uma capacidade de aprendizado extremamente rápida e estável. Os gráficos de Acurácia e Perda por Época mostraram que a acurácia atingiu valores próximos de 1.0 já nas primeiras iterações, enquanto a perda apresentou uma redução acentuada, indicando uma convergência eficiente.
 
-* **(Inserir aqui a imagem do gráfico "Acurácia por época (ResNet18)" - Figura 8 do seu TCC)**
-* **(Inserir aqui a imagem do gráfico "Perda por época (ResNet18)" - Figura 9 do seu TCC)**
+![Acuracia por epoca](img/acuracia_por_epoca.png)
+![perda por epoca](img/perda_por_epoca.png)
 
 ### 2.2. Resultados no Conjunto de Validação
 No conjunto de validação, o modelo obteve um **desempenho perfeito**, classificando corretamente 100% das imagens das três classes sem nenhum erro. As métricas de acurácia, sensibilidade, precisão e F1-score (macro) atingiram o valor de **1.000**.
@@ -35,7 +35,7 @@ A robustez e a capacidade de generalização do modelo foram confirmadas no conj
 * **Acurácia Final:** **99,60%**
 * **Métricas Adicionais:** O F1-score, precision e recall (média macro) também alcançaram **0.9960**, demonstrando a alta capacidade do modelo em generalizar seu aprendizado.
 
-* **(Inserir aqui a imagem da "Matriz de Confusão no conjunto de teste (ResNet18)" - Figura 12 do seu TCC)**
+* **![Matriz_confusao](img/matriz_confucao_validacao.png)**
 
 ### 2.4. Análise de Interpretabilidade com Grad-CAM
 Para garantir a transparência e a confiabilidade do modelo, a técnica **Grad-CAM** foi aplicada para gerar mapas de calor. As visualizações demonstraram um foco mais preciso do modelo ResNet18 em comparação a outras arquiteturas, destacando as regiões relevantes para a detecção de anomalias, mesmo em padrões sutis.
