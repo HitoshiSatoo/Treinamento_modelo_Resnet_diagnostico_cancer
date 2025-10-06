@@ -36,30 +36,32 @@ A robustez e a capacidade de generalização do modelo foram confirmadas no conj
 * **Acurácia Final:** **99,60%**
 * **Métricas Adicionais:** O F1-score, precision e recall (média macro) também alcançaram **0.9960**, demonstrando a alta capacidade do modelo em generalizar seu aprendizado.
 
-* **![Matriz_confusao](img/matriz_confucao_validacao.png)**
+  ![Matriz_confusao](img/matriz_confucao_validacao.png)
 
-* **![metricas_validacao](img/metrica_desempenho.png)**
+  ![metricas_validacao](img/metrica_desempenho.png)
   
 ### 2.4. Análise de Interpretabilidade com Grad-CAM
 Para garantir a transparência e a confiabilidade do modelo, a técnica **Grad-CAM** foi aplicada para gerar mapas de calor. As visualizações demonstraram um foco mais preciso do modelo ResNet18 em comparação a outras arquiteturas, destacando as regiões relevantes para a detecção de anomalias, mesmo em padrões sutis.
 
-* **(Inserir aqui a imagem da "Visualização Grad-CAM (ResNet18)" - Figura 14 do seu TCC)**
+  ![visualizacao_gradcam](img/visualizacao_grad_cam.png)
 
 ## 3. Conclusão
 
 A arquitetura **ResNet18** se mostrou mais robusta e eficaz para a tarefa de diagnóstico automatizado, alcançando uma acurácia de **99,60%**. A superioridade pode ser atribuída às suas conexões residuais, que permitem uma aprendizagem mais estável.
 
-A combinação da alta performance quantitativa com a interpretabilidade visual fornecida pelo Grad-CAM consolida a ResNet18 como uma ferramenta de grande potencial para aplicações clínicas, servindo como um sistema de apoio à decisão confiável para diagnósticos de câncer de pulmão.
+A combinação da alta performance quantitativa com a interpretabilidade visual fornecida pelo Grad-CAM consolida a ResNet18 como uma ferramenta de grande potencial para aplicações clínicas, servindo como um sistema de apoio à decisão confiável para diagnósticos de câncer de pulmão. As figuras abaixo são os resultados exibido pelo Grad-Cam.
+
+![visualizacao_aca](img/visualizacao_aca.png)
+
+![visualizacao_scc](img/visualizacao_scc.png)
+
+![visualizacao_benigno](img/visualizacao_benigno.png)
 
 ## Como Utilizar este Projeto
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO_AQUI]
-    ```
-2.  **Instale as dependências:**
-    ```bash
-    pip install -r requirements.txt
+    git clone [(https://github.com/HitoshiSatoo/Treinamento_modelo_Resnet_diagnostico_cancer/tree/main)]
     ```
 3.  **Estrutura de Dados:**
     * Baixe o dataset LC25000 do Kaggle.
